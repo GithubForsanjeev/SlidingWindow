@@ -21,10 +21,10 @@ public class AverageOfContiguousSubArrayLinearOptimized {
         int start = 0;
         double sum = 0;
         for (int end = 0; end < n; end++) {
-            sum +=arr[end];
-            if(end>=k-1){
-                result[start]=sum/k;
-                sum-=arr[start];
+            sum += arr[end];
+            if (end >= k - 1) {
+                result[start] = sum / k;
+                sum -= arr[start];
                 start++;
             }
         }
